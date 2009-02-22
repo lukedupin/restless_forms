@@ -1,3 +1,5 @@
+require 'erb'
+
 # Install hook code here
 def erb(t)
   ERB.new( File.open(t).read, 0, '<>' ).result
