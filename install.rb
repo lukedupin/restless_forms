@@ -8,7 +8,7 @@ puts "#{'Moving Modules Begin'.ljust(40,'-')}"
 
   #Create my instance variable to keep record of what I've done
 @models = Hash.new
-path = "#{File.dirname(__FILE__)}/../user_modules"
+path = "#{File.dirname(__FILE__)}/user_modules"
 
   #copy my modules
 `ls #{path}`.split(/\n/).each do |f|
