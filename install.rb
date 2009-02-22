@@ -13,7 +13,7 @@ path = "#{File.dirname(__FILE__)}/user_modules"
   #copy my modules
 `ls #{path}`.split(/\n/).each do |f|
   puts "Copying #{f}"
-  file = File.open("#{File.dirname(__FILE__)}/../../../../lib/#{f}", 'w')
+  file = File.open("#{File.dirname(__FILE__)}/../../../lib/#{f}", 'w')
   file.puts erb("#{path}/#{f}")
   file.close
 end
